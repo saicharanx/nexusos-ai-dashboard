@@ -1,0 +1,45 @@
+/* ── NexusOS Global Styles ─────────────────────────────────────────────── */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#080810;--sf:#10101a;--s2:#15151f;--s3:#1a1a28;
+  --br:rgba(255,255,255,0.07);--b2:rgba(255,255,255,0.12);
+  --ac:#6C63FF;--a2:#9B8FFF;--ag:rgba(108,99,255,0.15);
+  --tx:#e8e8f0;--t2:#9898b0;--t3:#5a5a72;
+  --gn:#3dffa0;--rd:#ff5c5c;--am:#ffb545;--bl:#4dc3ff;
+  --mo:'JetBrains Mono',monospace;--fn:'Space Grotesk',sans-serif;
+}
+html,body,#root{height:100%;overflow:hidden}
+body{background:var(--bg);color:var(--tx);font-family:var(--fn);font-size:14px}
+::-webkit-scrollbar{width:3px}
+::-webkit-scrollbar-thumb{background:var(--b2);border-radius:2px}
+@keyframes pd{0%,100%{opacity:1}50%{opacity:.3}}
+@keyframes rf{from{top:-20px}to{top:110%}}
+@keyframes sp{0%,100%{opacity:.5}50%{opacity:1}}
+@keyframes sff{from{top:-15px;transform:translateX(0)}to{top:110%;transform:translateX(15px)}}
+@keyframes cd{0%,100%{transform:translateX(0)}50%{transform:translateX(8px)}}
+@keyframes lb{0%,86%,100%{opacity:0}88%{opacity:1}90%{opacity:0}92%{opacity:.6}94%{opacity:0}}
+@keyframes fp{0%,100%{opacity:.4}50%{opacity:1}}
+@keyframes tk{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes shimmer{0%{background-position:-200px 0}100%{background-position:200px 0}}
+@keyframes msgIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+@keyframes alPulse{0%,100%{box-shadow:0 0 40px rgba(108,99,255,.2)}50%{box-shadow:0 0 80px rgba(108,99,255,.5)}}
+@keyframes ring{0%,100%{transform:rotate(0)}25%{transform:rotate(-15deg)}75%{transform:rotate(15deg)}}
+@keyframes db2{0%,60%,100%{transform:translateY(0)}30%{transform:translateY(-5px)}}
+@keyframes mci{from{opacity:0;transform:scale(.95) translateY(10px)}to{opacity:1;transform:scale(1) translateY(0)}}
+@keyframes dawnGlow{0%,100%{opacity:.6}50%{opacity:1}}
+@keyframes starTwinkle{0%,100%{opacity:.2}50%{opacity:.9}}
+/* Weather scene layers */
+@keyframes rainFall{0%{transform:translateY(-20px) scaleY(.8)}100%{transform:translateY(260px) scaleY(1)}}
+@keyframes snowDrift{0%{transform:translateY(-15px) translateX(0) rotate(0)}100%{transform:translateY(265px) translateX(18px) rotate(360deg)}}
+@keyframes sunPulse{0%,100%{transform:scale(1);opacity:.85}50%{transform:scale(1.08);opacity:1}}
+@keyframes cloudDrift{0%{transform:translateX(-8px)}50%{transform:translateX(8px)}100%{transform:translateX(-8px)}}
+@keyframes lightningFlash{0%,88%,94%,100%{opacity:0}90%,92%{opacity:.7}}
+@keyframes fogPulse{0%,100%{opacity:.35}50%{opacity:.65}}
+@keyframes moonGlow{0%,100%{box-shadow:0 0 30px 12px rgba(200,210,255,.15)}50%{box-shadow:0 0 50px 20px rgba(200,210,255,.25)}}
+@keyframes sunsetGlow{0%,100%{opacity:.5}50%{opacity:.9}}
+@keyframes weatherFadeIn{from{opacity:0}to{opacity:1}}
+/* Temperature wash — subtle breathing intensity */
+@keyframes tempWashPulse{0%,100%{opacity:.7}50%{opacity:1}}
+/* Ticker */
+@keyframes tickerSlide{from{transform:translateX(0)}to{transform:translateX(-50%)}}
