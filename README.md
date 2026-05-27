@@ -2,7 +2,8 @@
 
 A personal AI dashboard for a busy IT professional. A single screen that keeps you informed, lets you take quick actions, and uses an AI agent that calls real tools and returns live, real-time information — no dummy data.
 
-**Live demo:** https://nexusos-ai-dashboard.vercel.app
+**Live demo:** 
+https://nexusos-ai-dashboard.vercel.app/
 
 ---
 
